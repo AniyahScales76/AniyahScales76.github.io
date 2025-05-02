@@ -1,0 +1,87 @@
+body {
+  background-color: lightyellow;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('background.jpg');
+  background-color: lightyellow;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#container {
+  display: grid;
+  grid-template-areas:
+  "hd hd hd"
+  "lnav bd rnav"
+  "ft ft ft";
+  gap: 10px;
+  opacity: 0.8;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+header, nav, #bd, footer {
+  padding: 10px;
+  background-color: rgba(244, 244, 244, 0.8);
+  border: 1px solid #ccc;
+}
+
+#hd {
+  grid-area: hd;
+  padding: 50px;
+}
+
+.header-content {
+  width: calc(100% - 70px);
+}
+
+#lnav {
+  grid-area: lnav;
+  min-width: 150px;
+}
+
+#bd {
+  grid-area: bd;
+}
+
+#rnav {
+  grid-area: rnav;
+  min-width: 150px;
+}
+
+#ft {
+  grid-area: ft;
+}
+
+.profile-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: blue;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
